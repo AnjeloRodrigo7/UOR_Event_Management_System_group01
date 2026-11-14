@@ -1,0 +1,96 @@
+
+
+.Uni_logo{
+        width: 40px; 
+        height:auto;
+        }
+
+#img_h2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:15px;
+    color:aliceblue;
+    font-family: sans-serif;
+}
+
+.heading{
+    display: flex;
+    gap:15px;
+    align-items:center;
+    justify-content: space-between;
+    background-color:rgb(3, 3, 50);
+    padding : 5px;
+    color:aliceblue;
+    font-family: sans-serif;
+    
+}
+#img{
+    background-image: url(Uni.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    
+  
+#body{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#event{
+    height:auto;
+    width:50%;
+    border-radius: 35px;
+}
+.horizontal_row_main{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    cursor:pointer;
+    text-decoration: underline;   
+}
+h2{
+    font-family:sans-serif ;
+    color: rgb(5, 5, 80);
+    
+
+}
+.horizontal-row2{
+    display: flex;
+    gap:15px;
+    
+}
+.box_div{
+    background-color: rgb(213, 201, 201);
+    text-align: center;
+    width:100%;
+    border-radius: 15px;
+
+}
+li{
+    text-align: left;
+    
+}
+.Button{
+    background-color: rgb(255, 196, 0);
+    justify-self: end;
+    padding: 1% 3%;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+
+}
+
