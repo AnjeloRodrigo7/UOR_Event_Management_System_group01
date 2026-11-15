@@ -12,9 +12,10 @@ UniConnect Events is a responsive university event management website. Students 
 - `about.html` — purpose and values
 - `events.html` — upcoming event calendar
 - `contact.html` — registration and contact form
-- `styles.css` — shared responsive styling and page components
+- `assets/css/styles.css` — shared responsive styling and page components
+- `assets/images/` — images used by the public pages
 
-The website uses the root-level `about.html`, `events.html`, and `contact.html` pages as the public navigation destinations. Older contributor drafts are kept separately for reference.
+The website uses the root-level `about.html`, `events.html`, and `contact.html` pages as the public navigation destinations. Legacy duplicate drafts and unused assets are not part of the site.
 
 ## Group
 

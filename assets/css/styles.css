@@ -84,7 +84,7 @@ body {
 
 /* HERO SECTION WITH BACKGROUND IMAGE */
 .hero {
-  background: linear-gradient(rgba(23, 34, 30, 0.5), rgba(23, 34, 30, 0.65)), url('campuslogo2.jpeg') center/cover no-repeat;
+  background: linear-gradient(rgba(23, 34, 30, 0.5), rgba(23, 34, 30, 0.65)), url('../images/campuslogo2.jpeg') center/cover no-repeat;
   color: white;
   padding: 105px 0 120px;
 }
@@ -498,95 +498,5 @@ h2 {
 
   .card-image {
     height: 210px;
-  }
-}
-
-
-.contact-form {
-  background: ;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.contact-form label {
-  font-size: 13px;
-  font-weight: 700;
-  margin-top: 8px;
-}
-
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--line);
-  padding: 13px;
-  font: inherit;
-  background: var(--cream);
-  resize: vertical;
-}
-
-.contact-form .button {
-  margin-top: 14px;
-  align-self: start;
-}
-
-@media(max-width: 700px) {
-  .container {
-    width: calc(100% - 20px);
-  }
-  .nav {
-    height: auto;
-    padding: 18px 0;
-    align-items: flex-start;
-    gap: 15px;
-  }
-  .nav-links {
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .nav-links a {
-    font-size: 12px;
-  }
-  .hero {
-    padding: 75px 0 85px;
-  }
-  h1 {
-    font-size: 52px;
-  }
-  .section {
-    padding: 60px 0;
-  }
-  .section-heading, .filter-row, .cta {
-    display: block;
-  }
-  .section-heading .text-link {
-    display: block;
-    margin-top: 18px;
-  }
-  .cards, .two-column, .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .value-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .event-row {
-    grid-template-columns: 65px 1fr;
-    gap: 15px;
-  }
-  .event-date {
-    padding-right: 12px;
-  }
-  .outline-button {
-    grid-column: 2;
-    justify-self: start;
-  }
-  .footer-inner {
-    display: block;
-  }
-  .footer-inner span {
-    display: block;
-    margin: 4px 0;
   }
 }
