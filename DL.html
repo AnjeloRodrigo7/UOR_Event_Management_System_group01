@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Event Registration - University of Ruhuna</title>
+    <link rel="stylesheet" href="DL.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  
+  
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <div class="photo-frame">
+          <img src="https://www.ruh.ac.lk/images/2021/01/06/ruhuna.gif" alt="Ruhuna Logo" class="brand-logo-img">
+        </div>University of Ruhuna
+      </a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="top">
+    <div class="image">
+        <img src="Ruhuna-Among-Three-Sri-Lankan-Universities-in-the-World-39s-Top-2000-scaled.jpg" alt="">
+    </div>
+      <div class="content1">
+        <span>GET IN TOUCH • REGISTER • PARTICIPATE</span>
+        <h1>
+            Contact &<br>Registration
+        </h1>
+        <p>
+           Secure your spot for upcoming campus events or reach <br>out to our student event committee for inquiries.
+        </p>
+      </div>
+  </section> 
+
+  <section class="main-section container">
+    <div class="grid-layout">
+
+      <div class="form-card">
+        <span class="badge">RESERVE YOUR SPOT</span>
+        <h2>Event Registration</h2>
+        <p class="subtitle">Fill out the form below to register for an upcoming university event.</p>
+
+        <form action="#" method="POST" class="reg-form">
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Nimal Rodrigo " required>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="regno">Student Index / Reg No.</label>
+              <input type="text" id="regno" name="regno" placeholder="e.g. SC/2025/12345" required>
+            </div>
+            <div class="input-group">
+              <label for="faculty">Faculty</label>
+              <select id="faculty" name="faculty" required>
+                <option value="" disabled selected>Select Faculty</option>
+                <option value="science">Faculty of Science</option>
+                <option value="management">Faculty of Management & Finance</option>
+                <option value="humanities">Faculty of Humanities & Social Sciences</option>
+                <option value="technology">Faculty of Technology</option>
+                <option value="technology">Faculty of Fisheries</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="email">University / Personal Email</label>
+              <input type="email" id="email" name="email" placeholder="name@ruh.ac.lk" required>
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="07X XXX XXXX" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="event">Select Event</label>
+            <select id="event" name="event" required>
+              <option value="" disabled selected>Choose an upcoming event</option>
+              <option value="uni-day">Nov 21 - University Day Celebration</option>
+              <option value="tech-workshop">Nov 25 - Innovation & Tech Workshop</option>
+              <option value="sports-meet">Dec 02 - Inter-University Sports Meet</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="message">Additional Notes or Inquiry (Optional)</label>
+            <textarea id="message" name="message" rows="3" placeholder="Any special requirements or questions..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Complete Registration</button>
+        </form>
+      </div>
+
+      <div class="info-column">
+        <div class="info-card">
+          <div class="info-num">01</div>
+          <div>
+            <h3>Event Coordination Office</h3>
+            <p>Student Affairs Division,<br> Main Administration Building,<br> University of Ruhuna,<br> Wellamadama,<br> Matara.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-num">02</div>
+          <div>
+            <h3>Direct Contact</h3>
+            <p>Phone: +94 76 222 2681<br>Hotline: 071 000 1111</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-num">03</div>
+          <div>
+            <h3>Email Inquiries</h3>
+            <p>events@ruh.ac.lk<br>studentunion@ruh.ac.lk</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-num">04</div>
+          <div>
+            <h3>Office Hours</h3>
+            <p>Monday – Friday: 8:30 AM – 5:30 PM<br>Closed on Sundays & Public Holidays</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
