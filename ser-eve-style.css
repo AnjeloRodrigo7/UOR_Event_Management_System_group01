@@ -1,0 +1,419 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Inner',sans-serif;
+}
+
+body{
+    background-color:#F8F4ED;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width:1140;
+    margin:0 auto;
+    padding: 0 24px;
+}
+.top{
+    background-color: #5E121D;
+    colour: #FFFFFF;
+    padding: 85px 0 95px;
+
+    position:relative;
+    overflow:hidden;
+}
+
+
+
+.image{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('Ruhuna-Among-Three-Sri-Lankan-Universities-in-the-World-39s-Top-2000-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+    z-index:1;
+
+}
+.content1 {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.content1 span {
+  display: block;
+  color: #e7e1d2;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 14px;
+}
+
+.content1 h1 {
+  color: #c4c2bd;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+
+.content1 p {
+  max-width: 430px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(180deg, #4dbe95 0%, #226b50 100%);
+  color: #ffffff;
+  padding: 13px 28px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  
+}
+
+//card 3
+
+.events {
+  background-color: #F9F5EE;
+  padding: 72px 0;
+}
+
+.body {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.what {
+  display: block;
+  color: #226b50;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 8px;
+}
+
+.events-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #226b50;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #6E6565;
+}
+
+.view-all {
+  font-size: 13px;
+  font-weight: 700;
+  color: #226b50;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+.cards3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-top {
+  height: 175px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-top::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 60%);
+  z-index: 2;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #226b50;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 6px 12px;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 3;
+  margin: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+}
+
+.card-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.date-box {
+  background-color: #c1e9da;
+  padding: 8px 12px;
+  text-align: center;
+  min-width: 48px;
+}
+
+.date-box .month {
+  display: block;
+  font-size: 9px;
+  font-weight: 800;
+  color: #4a967a;
+  margin-bottom: 2px;
+}
+
+.date-box .day {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: #114431;
+  line-height: 1;
+}
+
+.text-box h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: #08442e;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.text-box p {
+  font-size: 13px;
+  color: #6E6565;
+  line-height: 1.5;
+}
+
+.card-footer {
+  border-top: 1px solid #F0ECE4;
+  padding-top: 14px;
+}
+
+.details-link {
+  font-size: 12px;
+  font-weight: 700;
+  color: #226b50;
+  text-decoration: none;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+// yata 4
+
+.services {
+  background-color: #F9F5EE;
+  padding: 20px 0 84px;
+}
+
+.services1 {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.servicesheader {
+  margin-bottom: 36px;
+}
+
+.servicesheader h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #042411;
+  margin-bottom: 8px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EFECE6;
+  padding: 28px 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+
+}
+
+
+
+.service-num {
+  background-color: #7cdb79;
+  color: #226b50;
+  font-size: 14px;
+  font-weight: 800;
+  min-width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-info h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #063d29;
+  margin-bottom: 6px;
+}
+
+.service-info p {
+  font-size: 14px;
+  color: #1a7755;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.service-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: #144d38;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+
+//yata kalla
+
+.services-section {
+  background-color: #F9F5EE;
+  padding: 20px 0 64px;
+}
+
+.bottom-section {
+  background-color: #5E121D;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bot1 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+    z-index:1;
+}
+
+.bottom {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.bot-text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.bot-text .subtitle {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bot-button {
+  display: inline-block;
+  background: linear-gradient(180deg,#43b38a 0%, #226b50 100%);
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
