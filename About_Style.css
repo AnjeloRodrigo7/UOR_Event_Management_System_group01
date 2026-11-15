@@ -1,14 +1,27 @@
 /* Colors used: orange, green and white */
 
+/* ---------- Theme colors (change them here once) ---------- */
+:root {
+    --green: #1f7a3a;
+    --dark-green: #124d26;
+    --orange: #e8730c;
+    --ink: #1e2b23;
+    --line: #dce1d9;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
-    color: #1e2b23;
+    color: var(--ink);
     background-color: white;
     line-height: 1.6;
 }
@@ -17,27 +30,78 @@ img {
     max-width: 100%;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    background: #f7f5ef;
+    border-bottom: 1px solid var(--line);
+}
+
+.nav {
+    min-height: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.brand {
+    color: var(--ink);
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo-img {
+    width: 60px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: var(--green);
+    font-weight: 700;
+}
+
 /* ---------- Top picture ---------- */
-#About{
-    background-image: url(Uni.png);
+#About {
+    background-image: url(About_Img/Uni.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    text-align: center;
-    padding: 3rem 2rem;
-    border-bottom: 6px solid #e8730c;
-    text-shadow: 0 0 5px #000000, 0 0 15px #000000;
+    text-align: left;
+    padding: 4rem 5%;
+    border-bottom: 6px solid var(--orange);
+    text-shadow: 0 0 5px #000000;
 }
 
-.Uni_logo {
-    width: 80px;
-    height: auto;
+#About h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
     margin-bottom: 1rem;
-}
-
-#About_Img h1 {
-    font-size: 2.2rem;
 }
 
 .Tagline {
@@ -49,18 +113,18 @@ img {
 
 /* ---------- Main body ---------- */
 #body {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 5%;
 }
 
 h2 {
-    color: #124d26;
     font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
-    color: #124d26;
+    color: var(--dark-green);
     margin-bottom: 0.5rem;
 }
 
@@ -72,9 +136,7 @@ h3 {
     gap: 2rem;
 }
 
-
-
-.About_Text h2 {
+.About_Text {
     margin: 0.5rem 0 1rem 0;
 }
 
@@ -85,18 +147,25 @@ h3 {
     font-weight: bold;
     padding: 2px 15px;
     border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    margin: 1rem 0;
 }
 
 #Event_Img {
-    display:block;
+    display: block;
     width: 100%;
     height: auto;
     border-radius: 25px;
-    border-bottom: 6px solid #e8730c;
+    border-bottom: 6px solid var(--orange);
 }
 
 /* ---------- What you will find ---------- */
 .Center_Title {
+    color: var(--dark-green);
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
@@ -110,9 +179,15 @@ h3 {
 
 .Container {
     background-color: #e8f4eb;
-    border-left: 5px solid #1f7a3a;
+    border-left: 5px solid var(--green);
     border-radius: 12px;
     padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------- Vision and Mission ---------- */
@@ -124,7 +199,9 @@ h3 {
 }
 
 #Vision {
-    background-image:url(Container_Img.jpg);
+    /* dark layer on top of the picture so the white text is easy to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url(About_Img/Container_Img.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -134,18 +211,17 @@ h3 {
 
 #Vision h2 {
     color: white;
-    margin-bottom: 1rem;
 }
 
 #Mission {
     background-color: #fff1e2;
-    border-top: 5px solid #e8730c;
+    border-top: 5px solid var(--orange);
     border-radius: 15px;
     padding: 2rem;
 }
 
 #Mission h2 {
-    margin-bottom: 1rem;
+    color: var(--dark-green);
 }
 
 li {
@@ -154,15 +230,45 @@ li {
     margin-bottom: 0.5rem;
 }
 
+/* ---------- Bottom green banner ---------- */
+.cta-section {
+    background: #226b50;
+    color: white;
+    padding: 49px 0;
+}
+
+.cta-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.eyebrow {
+    color: #c8e86b;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    border-top: 1px solid var(--line);
+    padding: 25px 0;
+    color: #6d766f;
+    font-size: 12px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+
 /* ---------- Small screens ---------- */
 @media (max-width: 800px) {
     .About_Us {
-       grid-template-columns: 1fr;
-    }
-
-    .About_Text,
-    #Event_Img {
-        width: 100%;
+        grid-template-columns: 1fr;
     }
 
     .Container_Collection {
@@ -172,6 +278,10 @@ li {
     .Vision_Mission {
         grid-template-columns: 1fr;
     }
+
+    #About h1 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -179,7 +289,11 @@ li {
         grid-template-columns: 1fr;
     }
 
-    #About_Img h1 {
+    .nav-links {
+        gap: 15px;
+    }
+
+    #About h1 {
         font-size: 1.6rem;
     }
 }
